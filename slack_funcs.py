@@ -31,7 +31,7 @@ def sendmsg(msg, fmt="%Y/%m/%d %H:%M:%S"):
     prepend with station id
     '''
 
-    cfg = get_config_params('slackconfig')
+    cfg = get_config_params()
     sc = SlackClient(cfg['token'])
     now = datetime.now().utcnow().strftime(fmt)
 
