@@ -11,7 +11,7 @@ def get_config_params(f=None):
     '''
 
     if f is None:
-        f = os.path.join(os.environ['HOME'], '.lofasm/slackconfig')
+        f = os.path.join('/home/controller/.lofasm/slackconfig')
     
     cfg_contents = ''
     cfg_dict = {}
